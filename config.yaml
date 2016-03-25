@@ -3,5 +3,5 @@ SMTP:
     smtp_host: smtp.exmail.qq.com
     smtp_tls: True
     smtp_user:  Alert@agrant.cn
-    smtp_password: GVXxwbhqPRK1VIuYXPYO6AMuB3wmQg
+    smtp_password: 
 
