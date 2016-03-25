@@ -1,0 +1,7 @@
+#yaml文件本身就是一个序列化后的字典，可通过yaml.load反序列化成字典
+SMTP:
+    smtp_host: smtp.exmail.qq.com
+    smtp_tls: True
+    smtp_user:  Alert@agrant.cn
+    smtp_password: GVXxwbhqPRK1VIuYXPYO6AMuB3wmQg
+
