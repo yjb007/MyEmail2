@@ -28,7 +28,7 @@ class myEmail(object):
 
         #构造邮件
         msg = MIMEMultipart()
-        content = MIMEText(message, _subtype='html', _charset='utf-8')
+        content = MIMEText(message, _subtype='plain', _charset='utf-8')
         msg.attach(content)
         msg['To'] = to
         msg['from'] = '%s<%s>' %(smtp_user, smtp_user)
