@@ -34,7 +34,7 @@ class myEmail(object):
         msg['To'] = to
         msg['from'] = '%s<%s>' %(smtp_alias, smtp_user)
         msg['subject'] = subject
-
+        mail_to_list = to.strip(',').split(',')
         try:
             server.connect(smtp_host, smtp_port)
         except timeout:
@@ -50,7 +50,7 @@ class myEmail(object):
                 return ret
 
         try:
-            server.sendmail(smtp_user, to, msg.as_string())
+            server.sendmail(smtp_user, mail_to_list, msg.as_string())
             server.quit()
         except Exception, e:
             ret['result'] = False
