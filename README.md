@@ -4,4 +4,4 @@
 
 使用方法：
 
-./pyemail.py xxxxx@qq.com  TestSubject  This is a testmail!
+./pyemail.py xxxxx@qq.com "TestSubject"  "`cat test.txt`"
