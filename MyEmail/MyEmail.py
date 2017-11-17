@@ -17,6 +17,7 @@ class myEmail(object):
         }
         smtp_host = self.options['smtp_host']
         smtp_user = self.options['smtp_user']
+        smtp_alias = self.options['smtp_alias']
         smtp_password = self.options['smtp_password']
         smtp_tls = self.options.get('smtp_tls', False)
         if smtp_tls:
@@ -31,7 +32,7 @@ class myEmail(object):
         content = MIMEText(message, _subtype='plain', _charset='utf-8')
         msg.attach(content)
         msg['To'] = to
-        msg['from'] = '%s<%s>' %(smtp_user, smtp_user)
+        msg['from'] = '%s<%s>' %(smtp_alias, smtp_user)
         msg['subject'] = subject
 
         try:

@@ -4,4 +4,5 @@ SMTP:
     smtp_tls: True
     smtp_user:  Alert@agrant.cn
     smtp_password: 
+    smtp_alias: Alert Inconformity
 
